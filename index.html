@@ -1,17 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Javascript (API)</title>
-    
-    <!-- css file link -->
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <h1>hello</h1>
 
+    <!-- favion link -->
+    <link
+      rel="shortcut icon"
+      href="https://learnjavascript.online/assets/favicons/favicon.ico"
+      type="image/x-icon"
+    />
+
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- tailwind css cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- css file link -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="mx-4 xl:mx-auto max-w-screen-xl">
+      <h1 class="text-center text-3xl md:text-4xl lg:text-5xl font-bold my-6">
+        Image Search App
+      </h1>
+      <form action="" class="flex justify-center gap-3 mb-20">
+        <input
+          class="border border-[#4b4949] py-3 pl-4 w-full max-w-xl rounded-lg"
+          type="text"
+          name="Search"
+          id="search-input"
+          placeholder="Search for image"
+        />
+        <button
+          class="bg-green-400 text-white py-3 px-4 rounded-lg"
+          type="button"
+        >
+          Search
+        </button>
+      </form>
+
+      <div id="search-results" class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3 mb-40">
+        <!-- 1 -->
+        <div
+          id="search-result"
+          class="text-center rounded-lg shadow-2xl overflow-hidden"
+        >
+          <img
+            class="object-cover object-center"
+            src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
+            alt="Yellow Lamborghini on a road"
+          />
+          <div class="py-3">
+            <a href="" class="text-lg">Yellow Lamborghini on a road</a>
+          </div>
+        </div>
+
+        <!-- 2 -->
+        <div
+          id="search-result"
+          class="text-center rounded-lg shadow-2xl overflow-hidden"
+        >
+          <img
+            class="object-cover object-center"
+            src="https://images.unsplash.com/photo-1494976388531-d1058494cdd8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+            alt="Black sports car front"
+          />
+          <div class="py-3">
+            <a href="" class="text-lg">Black sports car front</a>
+          </div>
+        </div>
+
+        <!-- 3 -->
+        <div
+          id="search-result"
+          class="text-center rounded-lg shadow-2xl overflow-hidden"
+        >
+          <img
+            class="object-cover object-center"
+            src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+            alt="Black mercedes benz"
+          />
+          <div class="py-3">
+            <a href="" class="text-lg">Black mercedes benz</a>
+          </div>
+        </div>
+
+        <!-- 4 -->
+        <div
+          id="search-result"
+          class="text-center rounded-lg shadow-2xl overflow-hidden"
+        >
+          <img
+            class="object-cover object-center"
+            src="https://images.unsplash.com/photo-1494905998402-395d579af36f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+            alt="Black Ford Mustand GT"
+          />
+          <div class="py-3">
+            <a href="" class="text-lg">Black Ford Mustand GT</a>
+          </div>
+        </div>
+
+        <!-- 5 -->
+        <div
+          id="search-result"
+          class="text-center rounded-lg shadow-2xl overflow-hidden"
+        >
+          <img
+            class="object-cover object-center"
+            src="https://images.unsplash.com/photo-1666919643134-d97687c1826c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80"
+            alt="Hyundai Motor Sports Car"
+          />
+          <div class="py-3">
+            <a href="" class="text-lg">Hyundai Motor Sports Car</a>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- javascript -->
     <script src="./script.js"></script>
-</body>
+  </body>
 </html>
