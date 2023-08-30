@@ -40,6 +40,7 @@
           placeholder="Search for image"
         />
         <button
+        id="button"
           class="bg-green-400 text-white py-3 px-4 rounded-lg"
           type="button"
         >
@@ -47,7 +48,7 @@
         </button>
       </form>
 
-      <div id="search-results" class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3 mb-40">
+      <div id="search-results" class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3 mb-20">
         <!-- 1 -->
         <div
           id="search-result"
@@ -123,6 +124,8 @@
           </div>
         </div>
       </div>
+
+      <button id="btn-show-more" class="bg-green-400 py-4 px-5 rounded-lg text-white text-lg mx-auto mb-20 hidden" type="submit">Show More</button>
     </section>
     <!-- javascript -->
     <script src="./script.js"></script>
