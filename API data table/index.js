@@ -1,10 +1,3 @@
-// watch video (what is an api)
-// what is json (javascript object notation)
-// JSON.stringify()
-// JSON.parse()
-// fetch promise, response, .then
-//
-
 fetch("https://jsonplaceholder.typicode.com/users")
   .then((res) => res.json())
   .then((data) => newData(data));
