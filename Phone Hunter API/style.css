@@ -5,10 +5,78 @@
   font-family: poppins;
   text-transform: uppercase;
 }
-body{
-    background-color: black;color: white;
+body {
+  background-color: rgb(92, 225, 65);
+  margin: 0px 50px;
+}
+.logo {
+  font-size: 30px;
+  text-align: center;
+  margin: 30px 0px;
+}
+form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+input {
+  border-radius: 8px;
+  border: 2px solid royalblue;
+  padding: 20px 20px;
+  width: 100%;
+  font-size: 20px;
+  max-width: 500px;
+}
+input:focus {
+  border: 2px solid royalblue;
+  outline: none;
+}
+button {
+  border-radius: 8px;
+  border: 2px solid black;
+  padding: 20px 20px;
+  background-color: rgb(65, 225, 204);
+  font-size: 20px;
+  color: white;
+}
+.container {
+  max-width: 1280px;
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 20px;
+}
+.main {
+  background-color: white;
+  border-radius: 15px;
+  overflow: hidden;
+  padding: 40px 20px 0px;
+}
+img {
+  width: 40%;
+  margin: 0px auto;
+  display: block;
+}
+.h1 {
+  text-align: center;
+  padding: 15px 0px;
+  font-size: 20px;
 }
 
+@media screen and (min-width: 640px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 1024px) {
+  .container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (min-width: 1280px) {
+}
 /*
 Phone Searchf
 URL Format: https://openapi.programming-hero.com/api/phones?search=${searchText}
