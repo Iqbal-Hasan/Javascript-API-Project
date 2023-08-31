@@ -1,5 +1,6 @@
 const button = document.querySelector("#button");
 const input = document.querySelector("#input");
+
 button.addEventListener("click", function () {
   let searchResult = input.value;
   input.value = "";
@@ -16,7 +17,6 @@ const loadData = async (searchResult) => {
   const container = document.querySelector(".container");
   container.innerHTML = "";
   for (const phone of phones) {
-
     const div = document.createElement("div");
     div.classList.add("main");
     div.innerHTML = `
